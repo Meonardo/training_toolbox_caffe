@@ -88,6 +88,8 @@ inline const char* cudnnGetErrorString(cudnnStatus_t status) {
     case CUDNN_STATUS_RUNTIME_FP_OVERFLOW:
       return "CUDNN_STATUS_RUNTIME_FP_OVERFLOW";
 #endif
+    case CUDNN_STATUS_VERSION_MISMATCH:
+      return "CUDNN_STATUS_VERSION_MISMATCH";
   }
   return "Unknown cudnn status";
 }
