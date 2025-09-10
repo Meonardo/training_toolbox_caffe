@@ -1,3 +1,4 @@
+### Install Caffe with OpenVINO and OpenCV support on Ubuntu 20.04
 ```bash
 export https_proxy=http://172.16.30.188:7891 http_proxy=http://172.16.30.188:7891 all_proxy=socks5://172.16.30.188:7891
 ```
@@ -8,6 +9,7 @@ export https_proxy=http://172.16.30.188:7891 http_proxy=http://172.16.30.188:789
 - git clone -b v2022.3.0 https://github.com/openvinotoolkit/openvino.git --recursive
 - wget https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
 
+### Instructions
 1. Update CMake to 3.22.0 or above
 2. Build protobuf v3.19.1:
    1. download the source code from above url;
@@ -65,17 +67,17 @@ export https_proxy=http://172.16.30.188:7891 http_proxy=http://172.16.30.188:789
    ```
 
 7. Test if Caffe works fine
-```bash
-python3 - <<'PY'
-import os, caffe
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
-solver = caffe.get_solver("/mnt/workspace/models/person_detection_action_recognition/solver.prototxt")
-solver.step(1)  # one iteration just to cross data layer + forward/backward once
-print("step(1) OK")
-PY
-```
+   ```bash
+   python3 - <<'PY'
+   import os, caffe
+   os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+   solver = caffe.get_solver("/mnt/workspace/models/person_detection_action_recognition/solver.prototxt")
+   solver.step(1)  # one iteration just to cross data layer + forward/backward once
+   print("step(1) OK")
+   PY
+   ```
 
-### Caffe configuration
+### Caffe configurations
 ```
    -- Caffe_DEFINITIONS: PUBLIC;-DUSE_LMDB;PUBLIC;-DUSE_LEVELDB;PUBLIC;-DUSE_CUDNN;PUBLIC;-DUSE_OPENCV;PRIVATE;-DWITH_PYTHON_LAYER
    -- Caffe_COMPILE_OPTIONS: 
@@ -134,10 +136,10 @@ PY
 ```
 
 ### Debug Caffe loading issues
-```
-LD_DEBUG=libs caffe train --solver /path/to/solver.prototxt 2>&1 \ > | grep -E 'libprotobuf|libstdc\+\+|cv2|_caffe|libcaffe.so' | head -n 120
+   ```
+   LD_DEBUG=libs caffe train --solver /path/to/solver.prototxt 2>&1 \ > | grep -E 'libprotobuf|libstdc\+\+|cv2|_caffe|libcaffe.so' | head -n 120
 
-or 
+   or 
 
-ltrace -f -e dlopen -s 256 caffe train --solver /path/to/solver.prototxt 2>&1 \ > | grep -i 'xxx'
-```
+   ltrace -f -e dlopen -s 256 caffe train --solver /path/to/solver.prototxt 2>&1 \ > | grep -i 'xxx'
+   ```
