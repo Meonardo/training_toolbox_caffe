@@ -105,3 +105,6 @@ examples/*/*lmdb
 
 l_openvino*tgz
 get-docker.sh
+
+
+train/

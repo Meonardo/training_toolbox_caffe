@@ -33,6 +33,12 @@ export https_proxy=http://172.16.30.188:7891 http_proxy=http://172.16.30.188:789
    2. cmake -B build -DCMAKE_BUILD_TYPE=Release -DWITH_OPENVINO=ON -DWITH_FFMPEG=ON -DNGRAPH=ON -DCMAKE_INSTALL_PREFIX=/home/meonardo/opt/intel/
 
 5. Build Caffe
+   - install requirements:
+      ```bash
+      pip install -r caffe/python/requirements.txt
+      sudo apt install -y libcudnn8=8.9.7.29-1+cuda11.8 libcudnn8-dev=8.9.7.29-1+cuda11.8
+      more apt installation see the docker file.
+      ```
    - cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="/home/meonardo/opt/intel;/home/meonardo/opt/protobuf" \
        -DCMAKE_INSTALL_PREFIX=/home/meonardo/opt/caffe \
        -Dpython_version=3 -Wno-dev -DCMAKE_CXX_FLAGS="-std=c++14" \
@@ -52,7 +58,7 @@ export https_proxy=http://172.16.30.188:7891 http_proxy=http://172.16.30.188:789
 
 6. Train with Caffe
    export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
-   caffe train --solver=person_detection_action_recognition/solver.prototxt --weights=../init_weights/action_detection_0005.caffemodel 2>&1 | tee ../train/import_trace.log
+   caffe train --solver=./solver.prototxt --weights=../../init_weights/action_detection_0005.caffemodel 2>&1 | tee ../../train/import_trace.log
 
 7. Test if Caffe works fine
 ```bash
@@ -121,4 +127,9 @@ PY
    --   Install path      :   /home/meonardo/opt/caffe
    -- 
    -- Configuring done
+```
+
+### Debug Caffe loading issues
+```
+LD_DEBUG=libs /opt/caffe/bin/caffe train --solver /path/to/solver.prototxt 2>&1 \ > | grep -E 'libprotobuf|libstdc\+\+|cv2|_caffe|libcaffe.so' | head -n 120
 ```

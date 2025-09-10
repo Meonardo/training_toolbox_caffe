@@ -9,11 +9,14 @@
                 "~/opt/caffe/include",
                 "~/opt/protobuf/include"
             ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c17",
+            "defines": [
+                "USE_CUDNN",
+                "USE_OPENCV"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
             "cppStandard": "c++14",
-            "intelliSenseMode": "linux-clang-x64"
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4

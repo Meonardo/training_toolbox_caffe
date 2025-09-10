@@ -19,5 +19,5 @@ weight_decay: 0.0001
 solver_mode: GPU
 debug_info: false
 snapshot: 1000
-snapshot_prefix: "snapshots/train"
+snapshot_prefix: "/home/meonardo/project/caffe/training_toolbox_caffe/train/snapshots/train"
 
