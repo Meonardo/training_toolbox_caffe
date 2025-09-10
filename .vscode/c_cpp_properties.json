@@ -11,7 +11,8 @@
             ],
             "defines": [
                 "USE_CUDNN",
-                "USE_OPENCV"
+                "USE_OPENCV",
+                "WITH_PYTHON_LAYER"
             ],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",

@@ -1,0 +1,28 @@
+{
+  "batch": 2,
+  "tasks": "/home/meonardo/project/caffe/training_toolbox_caffe/train/dataset/train_tasks.txt",
+  "height": 400,
+  "width": 680,
+  "ignore_occluded": false,
+  "num_data_fillers": 2,
+  "data_queue_size": 20,
+  "gamma": true,
+  "delta": 0.1,
+  "mirror": true,
+  "down_up_scale": true,
+  "noise": false,
+  "salt_pepper": false,
+  "free_weight": 0.1,
+  "expand_weight": 1.0,
+  "crop_weight": 1.0,
+  "use_attribute": "action",
+  "valid_class_ids": [0, 1, 2],
+  "ignore_class_id": 2,
+  "class_names_map": {
+    "sitting": 0,
+    "standing": 1,
+    "__undefined__": 2
+  },
+
+  "valid_class_names": ["sitting", "standing"]
+}

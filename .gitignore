@@ -73,6 +73,7 @@ caffe/models/*
 
 # build, distribute, and bins (+ python proto bindings)
 caffe/build
+caffe/install
 caffe/.build_debug/*
 caffe/.build_release/*
 caffe/distribute/*
