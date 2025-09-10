@@ -360,7 +360,7 @@ layer {
   bottom: "bottleneck1_1/dim_inc/conv"
   top: "bottleneck1_1/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -602,7 +602,7 @@ layer {
   bottom: "bottleneck1_2/dim_inc/conv"
   top: "bottleneck1_2/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -844,7 +844,7 @@ layer {
   bottom: "bottleneck1_3/dim_inc/conv"
   top: "bottleneck1_3/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -1086,7 +1086,7 @@ layer {
   bottom: "bottleneck1_4/dim_inc/conv"
   top: "bottleneck1_4/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -1328,7 +1328,7 @@ layer {
   bottom: "bottleneck2_0/dim_inc/conv"
   top: "bottleneck2_0/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -1647,7 +1647,7 @@ layer {
   bottom: "bottleneck2_1/dim_inc/conv"
   top: "bottleneck2_1/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -1889,7 +1889,7 @@ layer {
   bottom: "bottleneck2_2/dim_inc/conv"
   top: "bottleneck2_2/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -2131,7 +2131,7 @@ layer {
   bottom: "bottleneck2_3/dim_inc/conv"
   top: "bottleneck2_3/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -2373,7 +2373,7 @@ layer {
   bottom: "bottleneck2_4/dim_inc/conv"
   top: "bottleneck2_4/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -2615,7 +2615,7 @@ layer {
   bottom: "bottleneck2_5/dim_inc/conv"
   top: "bottleneck2_5/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -2857,7 +2857,7 @@ layer {
   bottom: "bottleneck2_6/dim_inc/conv"
   top: "bottleneck2_6/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -3099,7 +3099,7 @@ layer {
   bottom: "bottleneck2_7/dim_inc/conv"
   top: "bottleneck2_7/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -3341,7 +3341,7 @@ layer {
   bottom: "bottleneck2_8/dim_inc/conv"
   top: "bottleneck2_8/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -3588,7 +3588,7 @@ layer {
   bottom: "bottleneck3_0/dim_inc/conv"
   top: "bottleneck3_0/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -3907,7 +3907,7 @@ layer {
   bottom: "bottleneck3_1/dim_inc/conv"
   top: "bottleneck3_1/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -4149,7 +4149,7 @@ layer {
   bottom: "bottleneck3_2/dim_inc/conv"
   top: "bottleneck3_2/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -4391,7 +4391,7 @@ layer {
   bottom: "bottleneck3_3/dim_inc/conv"
   top: "bottleneck3_3/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -4633,7 +4633,7 @@ layer {
   bottom: "bottleneck3_4/dim_inc/conv"
   top: "bottleneck3_4/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -4875,7 +4875,7 @@ layer {
   bottom: "bottleneck3_5/dim_inc/conv"
   top: "bottleneck3_5/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -6752,7 +6752,7 @@ layer {
   bottom: "bottleneck3_6/dim_inc/conv"
   top: "bottleneck3_6/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -6994,7 +6994,7 @@ layer {
   bottom: "bottleneck3_7/dim_inc/conv"
   top: "bottleneck3_7/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -7236,7 +7236,7 @@ layer {
   bottom: "bottleneck3_8/dim_inc/conv"
   top: "bottleneck3_8/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -7478,7 +7478,7 @@ layer {
   bottom: "bottleneck3_9/dim_inc/conv"
   top: "bottleneck3_9/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -7720,7 +7720,7 @@ layer {
   bottom: "bottleneck3_10/dim_inc/conv"
   top: "bottleneck3_10/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -7962,7 +7962,7 @@ layer {
   bottom: "bottleneck4_0/dim_inc/conv"
   top: "bottleneck4_0/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -8281,7 +8281,7 @@ layer {
   bottom: "bottleneck4_1/dim_inc/conv"
   top: "bottleneck4_1/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -8523,7 +8523,7 @@ layer {
   bottom: "bottleneck4_2/dim_inc/conv"
   top: "bottleneck4_2/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -8765,7 +8765,7 @@ layer {
   bottom: "bottleneck4_3/dim_inc/conv"
   top: "bottleneck4_3/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -9007,7 +9007,7 @@ layer {
   bottom: "bottleneck4_4/dim_inc/conv"
   top: "bottleneck4_4/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -9249,7 +9249,7 @@ layer {
   bottom: "bottleneck4_5/dim_inc/conv"
   top: "bottleneck4_5/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -12341,7 +12341,7 @@ layer {
   bottom: "bottleneck4_6/dim_inc/conv"
   top: "bottleneck4_6/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -12583,7 +12583,7 @@ layer {
   bottom: "bottleneck4_7/dim_inc/conv"
   top: "bottleneck4_7/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -12825,7 +12825,7 @@ layer {
   bottom: "bottleneck4_8/dim_inc/conv"
   top: "bottleneck4_8/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -13067,7 +13067,7 @@ layer {
   bottom: "bottleneck4_9/dim_inc/conv"
   top: "bottleneck4_9/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -13309,7 +13309,7 @@ layer {
   bottom: "bottleneck4_10/dim_inc/conv"
   top: "bottleneck4_10/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
@@ -13551,7 +13551,7 @@ layer {
   bottom: "bottleneck4_11/dim_inc/conv"
   top: "bottleneck4_11/dim_inc/dropout"
   dropout_param {
-    dropout_ratio: 0.0
+    dropout_ratio: 0.5
   }
 }
 layer {
